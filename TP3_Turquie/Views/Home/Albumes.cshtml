@@ -1,0 +1,26 @@
+@using TP3_Turquie.Models
+
+@{
+    ViewData["Title"] = "Álbumes";
+    Album album = (Album)ViewBag.Album;
+    List<Canciones> canciones = (List<Canciones>)ViewBag.Canciones;
+}
+
+<h1>Detalles del Álbum</h1>
+
+<div class="album-details">
+    <h2>@album.Nombre - @album.Cantante</h2>
+    <img src="imagenes/@album.Foto" alt="@album.Nombre" width="300" />
+
+    <p><strong>Género:</strong> @album.Genero</p>
+    <p><strong>Productor:</strong> @album.Productor</p>
+
+    <h3>Canciones:</h3>
+    <ul class="canciones-list">
+        @foreach (var cancion in canciones)
+        {
+            <li>@cancion.Nombre</li>
+        }
+    </ul>
+</div>
+ <footer>Todos los derechos estan reservado - Tobias Turquie</footer>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GQBPRv7CZ2k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tobi\\Downloads\\TP3_Turquie\\TP3_Turquie\\TP3_Turquie.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tobi\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Tobi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Tobi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Tobi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

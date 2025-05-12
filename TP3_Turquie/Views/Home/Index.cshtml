@@ -1,0 +1,32 @@
+﻿@using TP3_Turquie.Models
+
+@{
+    ViewData["Title"] = "Index";
+    Dictionary<int, Album> albumes = (Dictionary<int, Album>)ViewBag.Albumes;
+}
+
+<h1>Turquie Music</h1>
+ <img src="imagenes/TurquieMusic.png" alt="TurquieMusic" width="300" />
+
+<main>
+    <div>
+        <h2>Encuentra tus discos favoritos en este lugar</h2>
+    </div>
+
+    <h4>Álbumes:</h4>
+    @foreach (var par in albumes)
+    {
+        var id = par.Key;
+        var album = par.Value;
+        <div>
+            <h5>@album.Nombre - @album.Cantante</h5>
+            <p><strong>Genero:</strong> @album.Genero</p>
+            <p><strong>Productor:</strong> @album.Productor</p>
+            <img src="imagenes/@album.Foto" alt="@album.Nombre" width="300" />
+
+            <a href='@Url.Action("SelectAlbum", "Home", new { a = id })'>
+                Más información</a>
+        </div>
+    }
+    <footer>Todos los derechos estan reservado - Tobias Turquie</footer>
+</main>
